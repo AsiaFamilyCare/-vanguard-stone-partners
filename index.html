@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vanguard Stone Partners | Premium Stone Marketplace</title>
+  <meta name="description" content="Premium stone marketplace demo storefront with live-style inventory, product browsing, and distributor-ready structure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <span>Premium stone. Real inventory. Built for trade.</span>
+      <span>Distributor-ready storefront</span>
+    </div>
+  </header>
+
+  <nav class="nav wrap">
+    <a class="brand" href="#home" aria-label="Vanguard Stone Partners home">
+      <span class="brand-mark">VSP</span>
+      <span><strong>VANGUARD STONE PARTNERS</strong><small>PREMIUM SURFACES</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#categories">Stone Types</a>
+      <a href="#about">About</a>
+      <a href="#partners">Distributors</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="cart-btn" id="cartButton" aria-label="Open cart">Cart <span id="cartCount">0</span></button>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="wrap hero-content">
+        <p class="eyebrow">PREMIUM STONE • LIVE-STYLE INVENTORY</p>
+        <h1>Natural stone.<br><span>Bolder business.</span></h1>
+        <p class="hero-copy">A modern stone marketplace designed to connect premium inventory with homeowners, contractors, designers, and commercial buyers.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#shop">Shop the collection</a>
+          <a class="btn btn-ghost" href="#partners">Distributor partnerships</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust wrap">
+      <div><strong>Premium Selection</strong><span>Granite, marble, quartzite & more</span></div>
+      <div><strong>Inventory Visibility</strong><span>In stock, low stock, sold out</span></div>
+      <div><strong>Secure Checkout Ready</strong><span>Built to connect payments later</span></div>
+      <div><strong>Distributor Ready</strong><span>Structured for future inventory feeds</span></div>
+    </section>
+
+    <section class="section wrap" id="categories">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPLORE BY TYPE</p><h2>Shop by category</h2></div>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="wrap">
+        <div class="section-heading shop-heading">
+          <div><p class="eyebrow">DEMO INVENTORY</p><h2>Featured slabs & surfaces</h2></div>
+          <div class="filters">
+            <select id="categoryFilter" aria-label="Filter by category"><option value="all">All categories</option></select>
+            <select id="sortFilter" aria-label="Sort products">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="stock">Inventory</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="section statement" id="about">
+      <div class="wrap statement-grid">
+        <div>
+          <p class="eyebrow">BUILT FOR THE NEXT STEP</p>
+          <h2>A storefront that can grow into a real distributor-powered marketplace.</h2>
+          <p>This prototype uses demo inventory today, but the product structure is designed so a distributor API, CSV feed, Shopify catalog, WooCommerce feed, or other inventory source can replace the demo data later without redesigning the storefront.</p>
+        </div>
+        <div class="statement-card">
+          <span>01</span><h3>Launch the brand</h3><p>Use the site to present your company professionally while distributor conversations are underway.</p>
+          <span>02</span><h3>Connect inventory later</h3><p>Swap demo quantities for supplier stock once an official feed is available.</p>
+          <span>03</span><h3>Keep your pricing</h3><p>Distributor cost can stay private while your retail pricing and markup rules remain customer-facing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="partners">
+      <div class="partner-panel">
+        <div>
+          <p class="eyebrow">DISTRIBUTOR PARTNERSHIPS</p>
+          <h2>Built to showcase and move inventory professionally.</h2>
+          <p>Vanguard Stone Partners is seeking distributor relationships for live inventory synchronization, product data access, fulfillment coordination, and long-term catalog growth.</p>
+        </div>
+        <div class="partner-points">
+          <div><strong>Catalog Sync</strong><span>API, CSV, XML, Shopify or compatible feed</span></div>
+          <div><strong>Inventory Mirroring</strong><span>Availability reflected on the storefront</span></div>
+          <div><strong>Retail Markup</strong><span>Supplier cost remains private</span></div>
+          <div><strong>Professional Presentation</strong><span>Dealer-ready product merchandising</span></div>
+        </div>
+        <a class="btn btn-dark" href="mailto:partnerships@yourdomain.com">Discuss a partnership</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="wrap contact-grid">
+        <div><p class="eyebrow">CONTACT</p><h2>Let’s build something solid.</h2><p>Replace these placeholders with your real business information before launch.</p></div>
+        <div class="contact-card">
+          <p><strong>Email</strong><br>sales@yourdomain.com</p>
+          <p><strong>Phone</strong><br>(216) 555-0148</p>
+          <p><strong>Service Area</strong><br>Northeast Ohio + nationwide shipping options</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div><div class="brand footer-brand"><span class="brand-mark">VSP</span><span><strong>VANGUARD STONE PARTNERS</strong><small>PREMIUM SURFACES</small></span></div><p>Demo storefront created for distributor presentations and future inventory integration.</p></div>
+      <div><strong>Shop</strong><a href="#shop">Products</a><a href="#categories">Categories</a><a href="#partners">Distributor Partners</a></div>
+      <div><strong>Company</strong><a href="#about">About</a><a href="#contact">Contact</a><a href="#home">Home</a></div>
+    </div>
+    <div class="wrap footer-bottom">© 2026 Vanguard Stone Partners. Prototype storefront.</div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header"><h3>Your cart</h3><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="btn btn-gold full" id="checkoutButton">Demo checkout</button>
+      <small>Prototype only. Connect Square, Shopify, Stripe, or another checkout provider before accepting real payments.</small>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
